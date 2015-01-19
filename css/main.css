@@ -135,6 +135,7 @@ textarea {
     color: inherit;
     font: inherit;
     margin: 0;
+    outline: none;
 }
 
 button {
@@ -305,6 +306,7 @@ header .nav a {
     font-size: 16px;
     text-decoration: none;
     line-height: 62px;
+    transition: .1s all linear;
 }
 
 header .nav a:hover {
@@ -372,6 +374,7 @@ nav ul a {
     text-indent: 67px;
     border-bottom: 1px solid #e1e5e7;
     position: relative;
+    transition: .1s all linear;
 }
 
 nav ul li:last-of-type a {
@@ -514,6 +517,7 @@ nav ul a.contacts:hover:before {
 .sub-menu ul.parent > li {
     padding: 22px 20px 13px 33px;
     border-bottom: 1px solid #49637d;
+    transition: .1s all linear;
 }
 
 .sub-menu ul.parent > li:hover {
@@ -551,6 +555,7 @@ nav ul a.contacts:hover:before {
 
 .sub-menu .child a:hover {
     color: #56ccc8;
+    transition: .1s all linear;
 }
 
 ul.social-big {
@@ -715,14 +720,130 @@ ul.social-big a.pin:hover:before {
     background-position: 4px -1022px;
 }
 
+.right-column.with-background {
+    background-color: #fff;
+    margin-bottom: 14px;
+    padding: 2px 0 0 0;
+}
 
+h2 {
+    color: #475055;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 300;
+    margin: 20px 0 6px 0;
+}
 
+.right-column h2 {
+    text-align: center;
+}
 
+p {
+    color: #475055;
+    font-size: 15px;
+    margin: 0 0 10px 0;
+}
 
+p.small {
+    font-size: 12px;
+    margin-top: 10px;
+}
 
+.right-column p {
+    text-align: center;
+}
 
+.social-sign {
+    list-style-type: none;
+    margin: 28px auto;
+    padding: 0;
+    width: 200px;
+}
 
+.social-sign:after {
+    clear: both;
+    display: table;
+    content: '';
+}
 
+.social-sign a {
+    float: left;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(../img/icons.png) no-repeat;
+    margin-right: 23px;
+}
+
+.social-sign li:last-of-type a {
+    margin-right: 0;
+}
+
+.social-sign a.fb {
+    background-position: -15px -852px;
+    margin-left: 2px;
+}
+
+.social-sign a.tw {
+    background-position: -71px -852px;
+}
+
+.social-sign a.g {
+    background-position: -15px -914px;
+}
+
+.social-sign a.in {
+    background-position: -74px -1093px;
+}
+
+form.sign-in {
+    margin: 26px 0 24px 25px;
+    position: relative;
+}
+
+form.sign-in label {
+    left: 18px;
+    top: 8px;
+    color: #dde2e4;
+    position: absolute;
+    font-size: 16px;
+    transition: .1s all linear;
+}
+
+form.sign-in label.active {
+    font-size: 12px;
+    left: 0;
+    top: -15px;
+    background-color: #dde2e4;
+    color: #fff;
+    padding: 0 5px;
+    display: block;
+}
+
+#sign-email {
+    float: left;
+    height: 39px;
+    width: 288px;
+    border: 1px solid #dde2e4;
+    border-radius: 1px;
+    margin-right: 14px;
+    padding: 2px 5px 5px 17px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form.sign-in input[type=submit] {
+    border: none;
+    border-radius: 4px;
+    background-color: #ea6060;
+    text-transform: uppercase;
+    color: #fff;
+    width: 97px;
+    height: 39px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+}
 
 
 
