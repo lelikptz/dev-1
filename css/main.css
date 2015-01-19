@@ -531,6 +531,7 @@ nav ul a.contacts:hover:before {
     position: relative;
     display: block;
     margin-bottom: 14px;
+    line-height: 21px;
 }
 
 .sub-menu a:after {
@@ -547,6 +548,7 @@ nav ul a.contacts:hover:before {
     color: #fff;
     font-size: 15px;
     margin-bottom: 10px;
+    line-height: 20px;
 }
 
 .sub-menu .child a:after {
@@ -656,7 +658,7 @@ ul.social-big a.pin:hover:before {
     box-sizing: border-box;
     color: #fff;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
 .small-block:before {
@@ -676,6 +678,7 @@ ul.social-big a.pin:hover:before {
     padding-right: 39px;
     position: relative;
     font-weight: 300;
+    line-height: 22px;
 }
 
 .small-block a:after {
@@ -723,7 +726,7 @@ ul.social-big a.pin:hover:before {
 .right-column.with-background {
     background-color: #fff;
     margin-bottom: 14px;
-    padding: 2px 0 0 0;
+    padding: 3px 0 0 0;
 }
 
 h2 {
@@ -731,7 +734,7 @@ h2 {
     font-size: 24px;
     line-height: 28px;
     font-weight: 300;
-    margin: 20px 0 6px 0;
+    margin: 20px 0 5px 0;
 }
 
 .right-column h2 {
@@ -741,12 +744,14 @@ h2 {
 p {
     color: #475055;
     font-size: 15px;
-    margin: 0 0 10px 0;
+    margin: 0;
+    line-height: 25px;
 }
 
 p.small {
     font-size: 12px;
     margin-top: 10px;
+    line-height: 15px;
 }
 
 .right-column p {
@@ -755,7 +760,7 @@ p.small {
 
 .social-sign {
     list-style-type: none;
-    margin: 28px auto;
+    margin: 26px auto;
     padding: 0;
     width: 200px;
 }
@@ -844,23 +849,3 @@ form.sign-in input[type=submit] {
     font-weight: 300;
     font-size: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

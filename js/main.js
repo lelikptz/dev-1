@@ -1,8 +1,9 @@
 $(document).ready(function () {
 
     var input = $('#sign-email');
+
     input.on('focus', function () {
-        $('#sign-email').prev('label').addClass('active');
+        input.prev('label').addClass('active');
     });
 
     input.on('blur', function () {
