@@ -849,3 +849,268 @@ form.sign-in input[type=submit] {
     font-weight: 300;
     font-size: 15px;
 }
+
+#slider {
+    width: 928px;
+    height: 453px;
+    background-color: #787878;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+#slider ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#slider li {
+    position: relative;
+}
+
+#slider .slider-info {
+    position: absolute;
+    top: 33px;
+    left: 56px;
+    width: 350px;
+}
+
+#slider h3 {
+    color: #fff;
+    font-size: 46px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
+
+#slider p {
+    font-size: 14px;
+    color: #fff;
+    margin:0 0 32px 4px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+#slider .slider-info a {
+    text-transform: uppercase;
+    border-radius: 3px;
+    width: 171px;
+    height: 52px;
+    margin-left: 2px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    transition: .1s all linear;
+}
+
+#slider .slider-info a:hover {
+    background-color: #fff;
+    color: #787878;
+}
+
+#slider > a {
+    width: 34px;
+    height: 52px;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    background: url(../img/icons.png) no-repeat #fff;
+    top: 217px;
+}
+
+#slider .left {
+    left: 0;
+    background-position: -14px -1141px;
+    border-radius: 0 2px 2px 0;
+}
+
+#slider .right {
+    right: 0;
+    background-position: -71px -1141px;
+    border-radius: 2px 0 0 2px;
+}
+
+#slider ul.slider-nav {
+    width: 100px;
+    bottom: 7px;
+    margin: 10px 0;
+    left: 425px;
+    position: absolute;
+}
+
+#slider ul.slider-nav li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .1s all linear;
+}
+
+#slider ul.slider-nav li:hover,
+#slider ul.slider-nav li.active {
+    background-color: #fff;
+}
+
+.video-block {
+    width: 928px;
+    margin-bottom: 14px;
+}
+
+.video-block:after {
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.video-block .text {
+    width: 314px;
+    background-color: #fff;
+    float: left;
+    height: 300px;
+    padding: 36px 22px 0 62px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.video-block .text:before {
+    content: '';
+    position: absolute;
+    background: url(../img/icons.png) no-repeat -11px -1210px transparent;
+    width: 40px;
+    height: 40px;
+    top: 36px;
+    left: 0;
+}
+
+.video-block h3 {
+    color: #475055;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 3px 0 11px;
+}
+
+
+.video-block .time {
+    color: #a3abaf;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 34px;
+}
+
+.video-block .text p {
+    line-height: 24px;
+}
+
+.video-block .text a {
+    color: #ea6060;
+    text-decoration: none;
+}
+
+.video-block .text a:hover {
+    text-decoration: underline;
+}
+
+.video-block .buttons {
+    width: 109px;
+    height: 300px;
+    background-color: #1f3045;
+    float: left;
+}
+
+.video-block .buttons ul {
+    margin: 28px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.video-block .buttons a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 32px;
+    padding-top: 39px;
+    transition: .1s all linear;
+}
+
+.video-block .buttons a:hover {
+    color: #56ccc8;
+}
+
+.video-block .buttons a:before {
+    background: url(../img/icons.png) no-repeat transparent;
+    content: '';
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 7px;
+    left: 34px;
+}
+
+.video-block .buttons a.like:before {
+    background-position: -69px -1207px;
+}
+
+.video-block .buttons a.later:before {
+    background-position: -11px -1266px;
+}
+
+.video-block .buttons a.share:before {
+    background-position: -69px -1266px;
+}
+
+.video-content {
+    width: 505px;
+    height: 300px;
+    background-color: #787878;
+    float: left;
+    position: relative;
+}
+
+.video-content .play {
+    position: absolute;
+    top: 121px;
+    left: 168px;
+    width: 62px;
+    height: 62px;
+    background-color: #1f3045;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.video-content .play span {
+    width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-left: 21px solid #fff;
+    border-bottom: 14px solid transparent;
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 23px;
+}
+
+.video-content .play:hover span {
+    border-top: 16px solid transparent;
+    border-left: 24px solid #fff;
+    border-bottom: 16px solid transparent;
+    top: 14px;
+    left: 23px;
+}
+
+
+
+
+
+
+
