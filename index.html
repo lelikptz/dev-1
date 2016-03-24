@@ -128,8 +128,10 @@
         <p class="small">Sign up for our personalized daily newsletter</p>
 
         <form class="sign-in">
-            <label for="sign-email" class="">Enter email address</label>
-            <input type="text" id="sign-email">
+            <div class="form-input-label">
+                <label for="sign-email" class="">Enter email address</label>
+                <input type="text" id="sign-email">
+            </div>
             <input type="submit" value="Sign up">
         </form>
     </div>
@@ -403,9 +405,18 @@
         <!-- .hot -->
         <div class="question">
             <div class="header">Ask a Question</div>
-            <input class="text" type="text" placeholder="Your name" value="">
-            <input class="text" type="email" placeholder="Your email" value="">
-            <textarea class="textarea" name="question" placeholder="Your qustion..."></textarea>
+            <div class="form-input-label">
+                <label for="name" class="">Your name</label>
+                <input class="text" type="text" value="" id="name">
+            </div>
+            <div class="form-input-label">
+                <label for="email" class="">Your name</label>
+                <input class="text" type="email" value="" id="email">
+            </div>
+            <div class="form-input-label">
+                <label for="textarea" class="">Your qustion...</label>
+                <textarea class="textarea" name="question" id="textarea"></textarea>
+            </div>
             <input class="submit" type="submit" value="Submit">
         </div>
     </div>

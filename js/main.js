@@ -141,21 +141,34 @@
 })(jQuery);
 // end hot news
 
-$(document).ready(function () {
+// animate label
+(function ($) {
+    $.fn.animateLabel = function () {
+        var elements = $(this);
 
-    var input = $('#sign-email');
-    input
-        .on('focus', function () {
-            input.prev('label').addClass('active');
-        })
-        .on('blur', function () {
-            if (input.val().length == 0) {
-                input.prev('label').removeClass('active');
+        elements.each(function (i, el) {
+            var input = $(el).find('input, textarea');
+
+            input
+                .on('focus', function () {
+                    input.prev('label').addClass('active');
+                })
+                .on('blur', function () {
+                    if (input.val().length == 0) {
+                        input.prev('label').removeClass('active');
+                    }
+                });
+
+            if (input.val() != '') {
+                input.prev('label').addClass('active');
             }
         });
-    if (input.val() != '') {
-        input.prev('label').addClass('active');
     }
+})(jQuery);
+// end animate label
+
+$(document).ready(function () {
+    $('.form-input-label').animateLabel();
 
     $('.calendar_t').on('click', 'td.day, td.weekend', function () {
         $(this).toggleClass('active');

@@ -483,6 +483,7 @@ nav ul a.contacts:hover:before {
 .left-column div.contacts li {
     padding: 0 0 28px 66px;
     position: relative;
+    line-height: 19px;
 }
 
 .left-column div.contacts li:before {
@@ -812,23 +813,34 @@ form.sign-in {
     position: relative;
 }
 
-form.sign-in label {
+.form-input-label label {
+    font-size: 16px;
+    transition: .1s all linear;
+    position: absolute;
     left: 18px;
     top: 8px;
     color: #dde2e4;
-    position: absolute;
-    font-size: 16px;
-    transition: .1s all linear;
 }
 
-form.sign-in label.active {
-    font-size: 12px;
+.form-input-label label.active{
+    display: block;
     left: 0;
     top: -15px;
+    font-size: 12px;
     background-color: #dde2e4;
     color: #fff;
     padding: 0 5px;
-    display: block;
+}
+
+.form-input-label {
+    position: relative;
+    float: left;
+}
+
+.form-input-label.animated:after {
+    clear: both;
+    content: '';
+    display: table;
 }
 
 #sign-email {
@@ -1317,7 +1329,7 @@ form.sign-in input[type=submit] {
 
 .question {
     background-color: #fff;
-    padding: 20px 22px;
+    padding: 22px;
 }
 
 .question .header {
